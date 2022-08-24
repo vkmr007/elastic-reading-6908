@@ -1,4 +1,7 @@
 
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
         #navbar{
             /* border: solid; */
             display: flex;
@@ -75,15 +78,20 @@
             width: 1450px;
             margin: auto;
             display: flex;
-            gap: 40px;
+            gap: 35px;
             height: 315px;
         }
         img{
-            width: 100%;
+            width: 107%;
+        }
+
+        #app #text>h1{
+            /* border:solid; */
+            margin-top: 0px;
         }
 
         #barcode{
-            width: 40%;
+            width: 38%;
         }
 
         #app-input{
@@ -94,7 +102,7 @@
         }
         .field-select{
             background-color: #ffffff;
-            border: 1px solid #727483;
+            /* border: 1px solid #727483; */
             border-radius: 8px;
             color: #141D38;
             font-size: 16px;
@@ -127,3 +135,118 @@
             border-radius: 1rem;
 
         }
+
+        #membership{
+            /* border: solid; */
+            display: grid;
+            color: white;
+            width: 1450px;
+            margin: auto;
+            margin-top: 70px;
+            align-items: center;
+        }
+
+        #membership>div{
+            grid-area: 1/1/2/2;
+        }
+        #membership img{
+            width: 100%;
+        }
+        #membership>.two{
+            /* border: solid red; */
+            width: 40%;
+            margin-left: 70px;
+            height: 200px;
+        }
+
+        #membership button{
+            background-color: blue;
+            color: white;
+            height: 60px;
+            width: 12rem ;
+            border-radius: 1rem;
+        }
+
+        
+
+
+        .tab {
+            /* border: solid; */
+            overflow: hidden;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: #f1f1f1;
+            width: 50%;
+            margin: auto;
+            margin: 50px auto 20px ;
+          }
+    
+          /* Style the buttons inside the tab */
+          .tab button {
+            /* border: solid red; */
+            background-color: inherit;
+            float: left;
+            margin:0px 5%;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+          }
+    
+          /* Change background color of buttons on hover */
+          .tab button:hover {
+            background-color: blue;
+            border-radius: 15px;
+    
+          }
+    
+          /* Create an active/current tablink class */
+          .tab button.active {
+            background-color: #ccc;
+          }
+    
+          /* Style the tab content */
+          .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            /* border-top: none; */
+            width: 50%;
+            margin: 10px auto 50px ;
+          }
+          .tabcontent .location{
+            width: 20%;
+            margin: 10px 20px;
+            height: 1.5rem;
+            
+          }
+          .tabcontent .date{
+            width: 20%;
+            margin:10px 15px;
+            height: 1.5rem;
+          }
+          .cars{
+            width: 40%;
+            margin: 10px 20px;
+            height: 1.5rem;
+          }
+          .things{
+            width: 50%;
+            height: 1.5rem;
+          }
+
+          .search{
+            /* border: solid; */
+            margin: auto;
+            width: 20.25%;
+            border-radius: 1rem ;
+          }
+          .search>button{
+            background-color: blue;
+            color: white;
+            height: 2.5rem;
+            width: 12rem ;
+            border-radius: 1rem;
+          }

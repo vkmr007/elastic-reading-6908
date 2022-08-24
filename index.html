@@ -269,7 +269,100 @@
         </div>
       </div>
       <div id="tabs">
-        
+        <div class="tab">
+          <div>
+            <button class="tablinks" onclick="openCity(event, 'Stay')">Stay</button>
+          </div>
+    
+          <div>
+            <button class="tablinks" onclick="openCity(event, 'Flight')">
+              Flight
+            </button>
+          </div>
+          <div>
+            <button class="tablinks" onclick="openCity(event, 'cars')">cars</button>
+          </div>
+          <div>
+            <button class="tablinks" onclick="openCity(event, 'packages')">
+              packages
+            </button>
+          </div>
+          <div>
+            <button class="tablinks" onclick="openCity(event, 'things to do')">
+              Things to do
+            </button>
+          </div>
+        </div>
+    
+        <div id="Stay" class="tabcontent">
+          <div>
+            <input type="text" class="location" placeholder="Goint to" />
+            <input type="date" class="date" placeholder="Check-in" />
+            <input type="date" class="date" placeholder="Check-out" />
+            <select id="travelers">
+              <option value="">No of travelers</option>
+              <option value="">1 adult</option>
+              <option value="">2 adult</option>
+              <option value="">2 adult 1 Child</option>
+              <option value="">2 adult 2 Child</option>
+            </select>
+          </div>
+          <input type="checkbox" name="" id="" /> Add a flight
+          <input type="checkbox" name="" id="" /> Add a car
+
+          <div class="search">
+            <button>Search</button>
+          </div>
+
+        </div>
+    
+        <div id="Flight" class="tabcontent">
+          <input type="text" class="location" placeholder="Leaving From" />
+          <input type="text" class="location" placeholder="Goint to" />
+          <input type="date" class="date" placeholder="Departing" />
+          <input type="date" class="date" placeholder="Returning" />
+
+          <div class="search">
+            <button>Search</button>
+          </div>
+        </div>
+    
+        <div id="cars" class="tabcontent">
+          <input type="text" class="cars" placeholder="Pick-up" />
+          <input type="text" class="cars" placeholder="Same as Pick-up" />
+          <input type="date" class="date" placeholder="Pick-up Date" />
+          <input type="date" class="date" placeholder="Drop-off date" />
+          <input type="time" class="date" placeholder="Pick-up time" />
+          <input type="time" class="date" placeholder="Drop-off time" />
+
+          <div class="search">
+            <button>Search</button>
+          </div>
+
+        </div>
+    
+        <div id="packages" class="tabcontent">
+          <input type="text" class="location" placeholder="Leaving From" />
+          <input type="text" class="location" placeholder="Goint to" />
+          <input type="date" class="date" placeholder="Departing" />
+          <input type="date" class="date" placeholder="Returning" />
+
+          <div class="search">
+            <button>Search</button>
+          </div>
+
+        </div>
+    
+        <div id="things to do" class="tabcontent">
+          <input type="text" class="things" placeholder="Things to do" />
+          <input type="date" class="date" placeholder="from" />
+          <input type="date" class="date" placeholder="to" />
+
+          <div class="search">
+            <button>Search</button>
+          </div>
+
+        </div>
       </div>
       <div id="app">
         <div>
@@ -342,7 +435,25 @@
           </div>
         </div>
       </div>
-      <div id="membership"></div>
+      <div id="membership">
+        <div>
+          <img src="https://a.travel-assets.com/travel-assets-manager/cmct-5255/POSa-HP-Hero-D-928x398.jpg" alt="">
+        </div>
+        <div class="two">
+          <div>
+          <h1>Save instantly with Expedia Rewards</h1>
+          </div>
+          <div>
+          <p>
+            You can enjoy access to 
+            perks like Member Prices, 
+            saving you 10% or more on select hotels. Terms may apply.
+          </p>
+        </div>
+          <div><button>See Member Prices</button></div>
+        </div>
+        </div>
+      </div>
       <div id="hotels"></div>
       <div id="bottom"></div>
     </div>
