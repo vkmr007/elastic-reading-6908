@@ -3,7 +3,7 @@
             /* border: solid; */
             display: flex;
             justify-content: space-between;
-            width: 80%;
+            width: 1450px;
             margin: auto;
         }
 
@@ -26,9 +26,6 @@
             color: black;
             text-decoration: none;          
         }
-
-
-
         .dropbtn {
             background-color: white ;
             color: black;
@@ -70,3 +67,63 @@
         .dropdown a:hover {background-color: #f1f1f1}
         
         .show {display:block;}
+
+        
+
+        #app>div{
+            /* border: solid; */
+            width: 1450px;
+            margin: auto;
+            display: flex;
+            gap: 40px;
+            height: 315px;
+        }
+        img{
+            width: 100%;
+        }
+
+        #barcode{
+            width: 40%;
+        }
+
+        #app-input{
+            /* border: solid; */
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .field-select{
+            background-color: #ffffff;
+            border: 1px solid #727483;
+            border-radius: 8px;
+            color: #141D38;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 12px;
+            padding-inline-start: calc(0.75rem - 1px);
+            min-block-size: 2rem;
+            padding-block-start: 1rem;
+            height: 55px;
+        }
+
+        #ph>input{
+            background-color: #ffffff;
+            border: 1px solid #727483;
+            border-radius: 8px;
+            color: #141D38;
+            font-size: 16px;
+            padding-inline-start: calc(0.75rem - 1px);
+            min-block-size: 2rem;
+            padding-block-start: 1rem;
+            height: 35px;
+        }
+
+        #getapp>button{
+            /* border: solid; */
+            background-color: blue;
+            color: white;
+            height: 60px;
+            width: 12rem ;
+            border-radius: 1rem;
+
+        }
