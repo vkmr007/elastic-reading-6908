@@ -71,105 +71,6 @@
         
         .show {display:block;}
 
-        
-
-        #app>div{
-            /* border: solid; */
-            width: 1450px;
-            margin: auto;
-            display: flex;
-            gap: 35px;
-            height: 315px;
-        }
-        img{
-            width: 107%;
-        }
-
-        #app #text>h1{
-            /* border:solid; */
-            margin-top: 0px;
-        }
-
-        #barcode{
-            width: 38%;
-        }
-
-        #app-input{
-            /* border: solid; */
-            display: flex;
-            gap: 20px;
-            align-items: center;
-        }
-        .field-select{
-            background-color: #ffffff;
-            /* border: 1px solid #727483; */
-            border-radius: 8px;
-            color: #141D38;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 12px;
-            padding-inline-start: calc(0.75rem - 1px);
-            min-block-size: 2rem;
-            padding-block-start: 1rem;
-            height: 55px;
-        }
-
-        #ph>input{
-            background-color: #ffffff;
-            border: 1px solid #727483;
-            border-radius: 8px;
-            color: #141D38;
-            font-size: 16px;
-            padding-inline-start: calc(0.75rem - 1px);
-            min-block-size: 2rem;
-            padding-block-start: 1rem;
-            height: 35px;
-        }
-
-        #getapp>button{
-            /* border: solid; */
-            background-color: blue;
-            color: white;
-            height: 60px;
-            width: 12rem ;
-            border-radius: 1rem;
-
-        }
-
-        #membership{
-            /* border: solid; */
-            display: grid;
-            color: white;
-            width: 1450px;
-            margin: auto;
-            margin-top: 70px;
-            align-items: center;
-        }
-
-        #membership>div{
-            grid-area: 1/1/2/2;
-        }
-        #membership img{
-            width: 100%;
-        }
-        #membership>.two{
-            /* border: solid red; */
-            width: 40%;
-            margin-left: 70px;
-            height: 200px;
-        }
-
-        #membership button{
-            background-color: blue;
-            color: white;
-            height: 60px;
-            width: 12rem ;
-            border-radius: 1rem;
-        }
-
-        
-
-
         .tab {
             /* border: solid; */
             overflow: hidden;
@@ -244,9 +145,154 @@
             border-radius: 1rem ;
           }
           .search>button{
+            cursor: pointer ;
             background-color: blue;
             color: white;
             height: 2.5rem;
             width: 12rem ;
             border-radius: 1rem;
           }
+
+        #app>div{
+            /* border: solid; */
+            width: 1450px;
+            margin: auto;
+            display: flex;
+            gap: 35px;
+            height: 315px;
+        }
+        img{
+            width: 107%;
+        }
+
+        #app #text>h1{
+            /* border:solid; */
+            margin-top: 0px;
+        }
+
+        #barcode{
+            width: 38%;
+        }
+
+        #app-input{
+            /* border: solid; */
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .field-select{
+            background-color: #ffffff;
+            /* border: 1px solid #727483; */
+            border-radius: 8px;
+            color: #141D38;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 12px;
+            padding-inline-start: calc(0.75rem - 1px);
+            min-block-size: 2rem;
+            padding-block-start: 1rem;
+            height: 55px;
+        }
+
+        #ph>input{
+            background-color: #ffffff;
+            border: 1px solid #727483;
+            border-radius: 8px;
+            color: #141D38;
+            font-size: 16px;
+            padding-inline-start: calc(0.75rem - 1px);
+            min-block-size: 2rem;
+            padding-block-start: 1rem;
+            height: 35px;
+        }
+
+        #getapp>button{
+            /* border: solid; */
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+            height: 60px;
+            width: 12rem ;
+            border-radius: 1rem;
+
+        }
+
+        #membership{
+            /* border: solid; */
+            display: grid;
+            color: white;
+            width: 1450px;
+            margin: auto;
+            margin-top: 70px;
+            align-items: center;
+        }
+
+        #membership>div{
+            grid-area: 1/1/2/2;
+        }
+        #membership img{
+            width: 1450px;
+            height: 500px;
+        }
+
+        #membership>.two{
+            /* border: solid red; */
+            width: 40%;
+            margin-left: 70px;
+            height: 200px;
+
+        }
+
+        #membership button{
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+            height: 60px;
+            width: 12rem ;
+            border-radius: 1rem;
+        }
+
+        #membership button:hover{
+            background-color: rgba(141, 141, 252, 0.795);
+        }
+
+        #hotel{
+            display: grid;
+            width: 1450px;
+            height: 500px;
+            margin: auto;
+            border: solid;
+            margin-top: 100px;
+            align-items: flex-end;
+            color: rgb(255, 255, 255);
+            /* height: 300px; */
+        }
+
+        #hotel img{
+            width: 1450px;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        #hotel>div{
+            /* border: solid; */
+            grid-area: 1/1/2/2;
+        }
+
+        #hotel #text{
+            width: 400px;
+            margin: 0px 0px 0px 40px;
+        }
+
+        #extras{
+            text-align: center;
+            margin-top: 40px ;
+        }
+        
+        #bottom{
+            /* border: solid; */
+            width: 1450px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-around;
+        }
