@@ -20,138 +20,40 @@
 }
 #links{
     /* border: 1px solid; */
-    font-size: 20px;
-    margin: 15px;
+   display: flex;
+   align-items: center;
 }
-#links>a{
-    /* border:  solid ; */
-    margin-left: 20px;  
-    color: black;
-    text-decoration: none;          
+#links li{
+    list-style: none;
+    padding: 0px 20px;   
+    position: relative;       
 }
-.dropbtn {
-    background-color: white ;
-    color: black;
-    /* padding: 6px; */
-    /* font-size: 6px; */
-    border: none;
-    border-radius: 20px;
-    margin-left: 40px;
-    cursor: pointer;
-    font-size: 25px;
-
-}
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color: rgb(244, 244, 244);
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 320px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+#links li a{
     text-decoration: none;
-    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: .3s ease;
 }
 
-.dropdown a:hover {background-color: #f1f1f1}
+#links li a:hover{
+    color: #3662d8 ;
+}
+#links li a:hover::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: #3662d8;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 
-.show {display:block;}
 
-        .tab {
-            /* border: solid; */
-            overflow: auto;
-            border: 1px solid #ccc;
-            border-radius: 20px;
-            background-color: #8e8ff141;
-            width: 50%;
-            margin: auto;
-            margin: 50px auto 20px ;
-          }
-    
-          /* Style the buttons inside the tab */
-          .tab button {
-            /* border: solid red; */
-            background-color: inherit;
-            float: left;
-            margin:0px 5%;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-            font-size: 17px;
-          }
-    
-          /* Change background color of buttons on hover */
-          .tab button:hover {
-            background-color: blue;
-            border-radius: 15px;
-          }
-    
-          /* Create an active/current tablink class */
-          .tab button.active {
-            background-color: rgb(156, 140, 250);
-          }
-    
-          /* Style the tab content */
-          .tabcontent {
-            display: none;
-            padding: 6px 12px;
-            border: 1px solid #ccc;
-            /* border-top: none; */
-            width: 50%;
-            margin: 10px auto 50px ;
-          }
-          .tabcontent .location{
-            width: 20%;
-            margin: 10px 20px;
-            height: 1.5rem;
-            
-          }
-          .tabcontent .date{
-            width: 20%;
-            margin:10px 15px;
-            height: 1.5rem;
-          }
-          .cars{
-            width: 40%;
-            margin: 10px 20px;
-            height: 1.5rem;
-          }
-          .things{
-            width: 50%;
-            height: 1.5rem;
-          }
+}
 
-          .search{
-            /* border: solid; */
-            margin: auto;
-            width: 20.25%;
-            border-radius: 1rem ;
-          }
-          .search>button{
-            cursor: pointer ;
-            background-color: blue;
-            color: white;
-            height: 2.5rem;
-            width: 12rem ;
-            border-radius: 1rem;
-          }
 
+
+       
         #app>div{
             /* border: solid; */
             width: 75%;
