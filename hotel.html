@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/dropmenu.css">
+    <link rel="stylesheet" href="./style/hotelgrid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+
+</head>
+<body>
+  <div id="navbar">
+    <div id="left">
+      <div><a href="./index.html">
+        <img
+          src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2"
+          alt=""
+        /></a>
+      </div>
+      <div>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            More travels
+            <svg
+            class="h-4 w-4"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-building-skyscraper"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="3" y1="21" x2="21" y2="21"></line>
+                <path d="M5 21v-14l8 -4v18"></path>
+                <path d="M19 21v-10l-6 -4"></path>
+                <line x1="9" y1="9" x2="9" y2="9.01"></line>
+                <line x1="9" y1="12" x2="9" y2="12.01"></line>
+                <line x1="9" y1="15" x2="9" y2="15.01"></line>
+                <line x1="9" y1="18" x2="9" y2="18.01"></line>
+              </svg>
+              Stays</a
+            >
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-plane"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2 -4l-2 -4h3l2 2h4l-2 -7h3z"
+                ></path>
+              </svg>
+              Flights</a
+            >
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-car"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="7" cy="17" r="2"></circle>
+                <circle cx="17" cy="17" r="2"></circle>
+                <path
+                  d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"
+                ></path>
+              </svg>
+              Cars</a
+            >
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-package"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <polyline
+                  points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3"
+                ></polyline>
+                <line x1="12" y1="12" x2="20" y2="7.5"></line>
+                <line x1="12" y1="12" x2="12" y2="21"></line>
+                <line x1="12" y1="12" x2="4" y2="7.5"></line>
+                <line x1="16" y1="5.25" x2="8" y2="9.75"></line>
+              </svg>
+              Packages</a
+            >
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-ticket"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="15" y1="5" x2="15" y2="7"></line>
+                <line x1="15" y1="11" x2="15" y2="13"></line>
+                <line x1="15" y1="17" x2="15" y2="19"></line>
+                <path
+                  d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2"
+                ></path>
+              </svg>
+              Holiday activities</a
+            >
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-discount-check"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"
+                ></path>
+                <path d="M9 12l2 2l4 -4"></path>
+              </svg>
+              Deals</a
+            >
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-zoom"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M17.011 9.385v5.128l3.989 3.487v-12z"></path>
+                <path
+                  d="M3.887 6h10.08c1.468 0 3.033 1.203 3.033 2.803v8.196a0.991 .991 0 0 1 -.975 1.001h-10.373c-1.667 0 -2.652 -1.5 -2.652 -3l.01 -8.002a0.882 .882 0 0 1 .208 -.71a0.841 .841 0 0 1 .67 -.287z"
+                ></path>
+              </svg>
+              Groups & meetings</a
+            >
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-device-mobile"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <rect x="6" y="3" width="12" height="18" rx="2"></rect>
+                <line x1="11" y1="4" x2="13" y2="4"></line>
+                <line x1="12" y1="17" x2="12" y2="17.01"></line>
+              </svg>
+              Mobile</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>      
+       <ul id="links">
+        <li><a class="active" href=""><i class="ti ti-world"></i> English</a></li>
+        <li><a href="">Support</a></li>
+        <li><a href="">Trips</a></li>
+        <li><a href=""><i class="ti ti-bell-ringing"></i></a></li>
+        <li><a href="">Sign in</a></li>
+       </ul>
+
+    </div>
+  </div>
+  <div id="grid">
+
+
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/42000000/41370000/41364100/41364056/ab95ab8e_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Hotel apple inn</h1>
+        <p>Mumbai</p>
+        <h5>3.5</h5>
+        <p>(7 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="date">Mon,24 Oct - Wed,26 Oct</div>
+        <div class="one">Rs1,125</div>
+      </div>
+    </div>
+
+
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/37000000/36790000/36789400/36789391/9f765073_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Monarch Express</h1>
+        <p>Mumbai</p>
+        <h5>4.3/5</h5>
+        <p>( 3reviews)</p>
+      </div>
+      <div class="price">
+        <div class="date">Mon,24 Oct - Wed,26 Oct</div>
+        <div class="one">Rs1,749</div>
+      </div>
+    </div>
+
+
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/59000000/58040000/58039800/58039726/498981bd_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Sky suites by Monarch</h1>
+        <p>Mumbai</p>
+        <h5>5..0/5</h5>
+        <p>(2 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="date">Mon,24 Oct - Wed,26 Oct</div>
+        <div class="one">Rs3,089</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/1000000/50000/45600/45510/643edcbb_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Fariyas Hotel</h1>
+        <p>Mumbai</p>
+        <h5>3.8/5</h5>
+        <p>(245 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed,26 Oct</div>
+        <div class="one">Rs8,032</div>
+      </div>
+    </div>
+
+
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/16000000/15440000/15432800/15432756/14782f5c_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Niranta Transit Hotel</h1>
+        <p>Mumbai</p>
+        <h5>4.1/5</h5>
+        <p>(225 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed,26 Oct</div>
+        <div class="one">Rs8,750</div>
+      </div>
+    </div>
+
+
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/3000000/2700000/2695100/2695032/8e08aedb_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Grand Residency Hotel</h1>
+        <p>Mumbai</p>
+        <h5>3.8/5</h5>
+        <p>(58 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed,26 Oct</div>
+        <div class="one">Rs8,437</div>
+      </div>
+    </div>
+
+
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/35000000/35000000/34993500/34993490/3040fc2e_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Capital O 29143 Embassy Suites</h1>
+        <p>Mumbai</p>
+        <h5>3.4/5</h5>
+        <p>(13 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed,26 Oct</div>      
+        <div class="one">Rs1,346</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/70000000/69550000/69543900/69543835/96b2af48_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Serenity by Monarch</h1>
+        <p>Pune</p>
+        <h5>3.5/5</h5>
+        <p>(0 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed,26 Oct</div>
+        <div class="one">Rs3,158</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/2000000/1790000/1781300/1781297/83f73262_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Hotel BB palace</h1>
+        <p>New Delhi</p>
+        <h5>2.9/5</h5>
+        <p>(55 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed,26 Oct</div>
+        <div class="one">Rs1,350</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/11000000/10960000/10951200/10951181/4d940cf1_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Hotel Aeroporto</h1>
+        <p>New Delhi</p>
+        <h5>2.5/5</h5>
+        <p>(27 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed,26 Oct</div>
+        <div class="one">Rs1,408</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/43000000/42580000/42572800/42572744/f41bf8f5_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>OYO 30462 Hotel Ivy</h1>
+        <p>New Delhi</p>
+        <h5>0/5</h5>
+        <p>(0 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed,26 Oct</div>
+        <div class="one">Rs617</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/7000000/6210000/6209800/6209751/2b9ec564_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Hotel Opera</h1>
+        <p>New Delhi</p>
+        <h5>2.3/5</h5>
+        <p>(4 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed Oct</div>
+        <div class="one">Rs1,760</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/33000000/32190000/32184600/32184555/4593dea6_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Capital o 18693 Hotel Levanti</h1>
+        <p>Delhi</p>
+        <h5>4.0/5</h5>
+        <p>(3 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed Oct</div>
+        <div class="one">Rs645</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/36000000/35310000/35304600/35304577/7d8622de_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>OYO 15081 Vizima Palace</h1>
+        <p>Delhi</p>
+        <h5>0/5</h5>
+        <p>(0 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed Oct</div>
+        <div class="one">Rs871</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/36000000/35310000/35304600/35304541/c50c5830_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>OYO 25106 Swastik Hospitality</h1>
+        <p>Delhi</p>
+        <h5>0/5</h5>
+        <p>(0 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed Oct</div>
+        <div class="one">Rs994</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/3000000/2280000/2270900/2270801/a06b7fa0_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Halcyon</h1>
+        <p>Bengaluru</p>
+        <h5>3.8/5</h5>
+        <p>(9 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed Oct</div>
+        <div class="one">Rs4,399</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/37000000/36400000/36394100/36394036/11873d23_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Caramel Hotel</h1>
+        <p>Bengaluru</p>
+        <h5>0/5</h5>
+        <p>(0 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed Oct</div>
+        <div class="one">Rs2,974</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/33000000/32780000/32773900/32773826/5bc152ce_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>OYO 12965 Archana Comforts</h1>
+        <p>Bengaluru</p>
+        <h5>2.0/5</h5>
+        <p>(2 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed Oct</div>
+        <div class="one">Rs1,158</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/82000000/81710000/81700800/81700737/f96729e2_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Hotel Monarch By Rivido</h1>
+        <p>Bengaluru</p>
+        <h5>0/5</h5>
+        <p>(0 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed Oct</div>
+        <div class="one">Rs2,800</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/75000000/74480000/74472900/74472812/w800h597x0y3-727dcca2_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Golden Ship Hotel</h1>
+        <p>Riyad</p>
+        <h5>3.6/5</h5>
+        <p>(5 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed Oct</div>
+        <div class="one">Rs14,436</div>
+      </div>
+    </div>
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/79000000/78280000/78274500/78274467/b891d6da_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Mabaat-Al Hada -463</h1>
+        <p>Riyad</p>
+        <h5>0/5</h5>
+        <p>(0 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed Oct</div>
+        <div class="one">Rs41,481</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/1000000/490000/486300/486249/be1d1259_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>JA Oasis Beach Tower</h1>
+        <p>Dubai</p>
+        <h5>4.6/5</h5>
+        <p>(1183 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed Oct</div>
+        <div class="one">Rs27,652</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/7000000/6490000/6481300/6481219/f436a42a_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>Copthorne Hotel Sharjah</h1>
+        <p>Dubai</p>
+        <h5>3.8/5</h5>
+        <p>(237 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed Oct</div>
+        <div class="one">Rs6,699</div>
+      </div>
+    </div>
+    
+    
+    <div class="blocks">
+      <div class="image">
+        <img src="https://images.trvl-media.com/hotels/5000000/4850000/4849400/4849400/b0442ed8_b.jpg" alt="">
+      </div>
+      <div class="details">
+        <h1>City Premiere Hotel Apartment</h1>
+        <p>Dubai</p>
+        <h5>4.1/5</h5>
+        <p>(468 reviews)</p>
+      </div>
+      <div class="price">
+        <div class="Date">Mon,24 Oct - Wed Oct</div>
+        <div class="one">Rs9,363</div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./script/dropmenu.js"></script>
+</html>

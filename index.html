@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Expedia travels</title>
     <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/dropmenu.css">
+    <link rel="stylesheet" href="./style/tab.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+
   </head>
   <body>
     <div>
@@ -214,53 +219,15 @@
             </div>
           </div>
         </div>
-        <div id="links">
-          <a href="">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-world"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <circle cx="12" cy="12" r="9"></circle>
-              <line x1="3.6" y1="9" x2="20.4" y2="9"></line>
-              <line x1="3.6" y1="15" x2="20.4" y2="15"></line>
-              <path d="M11.5 3a17 17 0 0 0 0 18"></path>
-              <path d="M12.5 3a17 17 0 0 1 0 18"></path>
-            </svg>
-            English</a
-          >
-          <a href="">Support</a>
-          <a href="">Trips</a>
-          <a href=""
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-bell-ringing"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"
-              ></path>
-              <path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
-              <path d="M21 6.727a11.05 11.05 0 0 0 -2.794 -3.727"></path>
-              <path d="M3 6.727a11.05 11.05 0 0 1 2.792 -3.727"></path></svg
-          ></a>
-          <a href="">Sign in</a>
+        <div>      
+           <ul id="links">
+            <li><a class="active" href=""><i class="ti ti-world"></i> English</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Trips</a></li>
+            <li><a href=""><i class="ti ti-bell-ringing"></i></a></li>
+            <li><a href="">Sign in</a></li>
+           </ul>
+
         </div>
       </div>
       <hr>
@@ -452,7 +419,7 @@
       </div>
       <div id="hotel">
         <div>
-          <a href="">
+          <a href="./hotel.html">
           <img src="https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg" alt="">
         </a>
         </div>
@@ -523,4 +490,5 @@
     </div>
   </body>
   <script src="./script/index.js"></script>
+  <script src="./script/dropmenu.js"></script>
 </html>
