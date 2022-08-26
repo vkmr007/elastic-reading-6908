@@ -4,9 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Signup</title>
+    <link rel="stylesheet" href="./style/sign.css" />
   </head>
   <body>
-    signup
+    <div id="navbar">
+      <a href="./index.html">
+        <img
+          src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2"
+          alt=""
+        />
+      </a>
+    </div>
+    <hr />
+    <div id="form">
+      <form action="/action_page.php" style="border: 1px solid #ccc">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <input
+            type="text"
+            placeholder="Email address"
+            name="email"
+            required
+          />
+
+          <input type="text" placeholder="First name" required>
+          <input type="text" placeholder="Surname" required>
+
+          <input type="password" placeholder="Password" name="psw" required />
+          <label>
+            <input
+              type="checkbox"
+              checked="checked"
+              name="remember"
+              style="margin-bottom: 15px"
+            />
+            Keep me signed in
+          </label>
+          <p style="margin-top: -5px;"> 
+            Selecting this checkbox will keep you signed into your account on this
+            device until you sign out. Do not select this on shared device.
+          </p>
+          <br>
+          
+          <input
+          type="checkbox"
+          checked="checked"
+          name="remember"
+          style="margin-bottom: 15px"
+        />
+        Get related notifactions
+      </label>
+      <p style="margin-top: -5px;">I'd like to receive travel deals, 
+        special offers and other information from Expedia via email.</p>
+      
+         
+
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+
+          <div id="bottom">
+            
+            <p>Already have account.<a href="./signin.html"> <br> Login</a></p>
+          </div>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

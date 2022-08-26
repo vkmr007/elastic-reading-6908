@@ -94,3 +94,6 @@
 
 .show {display:block;}
 
+svg{
+    width: 30px;
+}
