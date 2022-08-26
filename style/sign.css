@@ -1,0 +1,96 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+
+#navbar{
+    /* border: solid; */
+    display: flex;
+    right: 0px;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+}
+#form{
+    /* border: solid; */
+    width: 25%;
+    margin: auto;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    border: 1px solid #3662d8;
+  border-radius: 15px;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  
+  /* background: #f1f1f1; */
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+p{
+  font-size: .85rem;
+  /* font-weight: ; */
+  /* border: solid; */
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif,
+}
+
+p a{
+  text-decoration: none;
+  color: blue;
+}
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #3662d8;
+  color: white;
+  padding: 14px 20px;
+  margin: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  /* width: 50%; */
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:5;
+}
+
+.signupbtn {
+  /* float: left; */
+  width:100%;
+  border: solid;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#bottom{
+  text-align: center;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+    #form{
+       width: 50%;
+    }
+  }
+@media screen and (max-width: 600px) {
+    #form{
+       width: 80%;
+    }
+  }
+
