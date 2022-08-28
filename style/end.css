@@ -1,0 +1,12 @@
+
+
+#end{
+    width: 64%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+#end>div:first-child{
+    /* border: solid; */
+    text-align: center;
+}
